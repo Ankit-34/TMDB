@@ -1,0 +1,20 @@
+.home{
+    margin-top: 20px !important;
+    display: flex;
+    margin: 0px auto;
+    flex-direction: column;
+    margin-top: 100px !important;
+    width: 80%;
+    margin-left: 265px;
+}
+
+.displayImg{
+    text-align: center;
+    margin: 0px auto !important;
+
+}
+
+.displayImg img{
+    aspect-ratio: 13/4;
+    border-radius: 30px;
+}

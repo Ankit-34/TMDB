@@ -1,0 +1,35 @@
+.Outer{
+    display: flex;
+    column-gap: 20px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    background-color: rgb(0, 0, 0);
+}
+
+.logo{
+    padding: 20px;
+    font-size: 1.4rem;
+    height: 70%;
+    letter-spacing: 5px;
+    z-index: 1; 
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: white !important;
+}
+
+.adjust{
+    margin: 10px auto;
+    width: 100%;
+}
+
+.search_bar{
+    --background: rgba(35, 35, 35, 0.5) !important;
+    width: 35% !important;
+    min-width: 100px;
+    margin: 10px auto !important;
+    border-radius: 10px !important;
+}

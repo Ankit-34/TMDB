@@ -1,0 +1,15 @@
+#root{
+    /* background-color: black !important; */
+    font-family: 'Eczar', serif;
+    font-family: 'Roboto', sans-serif;
+  }
+
+body::-webkit-scrollbar {
+  display: none;
+  /* background-color: black; */
+}
+
+.layout{
+  display: flex;
+  color: white;
+}
