@@ -1,0 +1,16 @@
+.sdetailcard
+{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid green; */
+    margin: 20px 0px;
+    padding: 20px;
+    letter-spacing: 2px;
+    width: 20%;
+    /* border: 2px solid red; */
+}
+
+.sdetailcard p{
+    width: 180px;
+    line-height: 20px;
+}

@@ -1,15 +1,11 @@
 import "./App.css";
-// import AppLayout from "./Pages/AppLayout";
 import FilterContent from "./Pages/FilterContent";
 import Home from "./Pages/Home";
-// import Content from './Pages/Content'
-// import Navbar from './Pages/Navbar'
-// import Background from './Pages/Background'
-// import Footer from './Pages/Footer'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Sidebar from './Pages/Sidebar'
 import Navbar from "./Pages/Navbar";
-import Content from "./Pages/Content";
+import Detail from "./Pages/Detail";
+import Search from "./Pages/Serach";
 
 const App = () => {
   return (
@@ -17,7 +13,6 @@ const App = () => {
       <Navbar/>
       <div className="layout">
       <Sidebar />
-      {/* <Home /> */}
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route
@@ -32,8 +27,19 @@ const App = () => {
               <FilterContent typeProp="tv" />
           }
         ></Route>
+        <Route
+          path="/:type/:filterType/:id"
+          element={
+              <Detail />
+          }
+        ></Route>
+        <Route
+          path="/search"
+          element={
+              <Search />
+          }
+        ></Route>
       </Routes>
-      {/* <h1>Cotent</h1> */} 
       </div>
     </Router>
   );

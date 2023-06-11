@@ -4,17 +4,19 @@
     margin: 0px auto;
     flex-direction: column;
     margin-top: 100px !important;
-    width: 80%;
+    width: 82%;
     margin-left: 265px;
 }
 
 .displayImg{
+    width: 60%;
     text-align: center;
     margin: 0px auto !important;
-
 }
 
 .displayImg img{
-    aspect-ratio: 13/4;
+    width: 100%;
+    height: 100%;
+    /* aspect-ratio: 30/15; */
     border-radius: 30px;
 }

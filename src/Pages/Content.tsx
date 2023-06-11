@@ -44,14 +44,11 @@ const Content : React.FC<FilterTypes> = ({typeProp, filterProp}) => {
 
       filter = filterProp || filter_param ;
       type = typeProp ;
-
-        console.log("Ya!!");
-    // ('https://api.themoviedb.org/3/trending/movie/week
        let URL = "";
 
       if(filterProp==='trending')
         URL =  `${base_url}/${filter}/${type}/week`; 
-      else URL =  `${base_url}/${type}/${filter}`; 
+      else URL =  `${base_url}/${type}/${filter}`;   
         
     try {
     console.log("fetching for : ", URL);
@@ -67,12 +64,11 @@ const Content : React.FC<FilterTypes> = ({typeProp, filterProp}) => {
     fetchData();
   }, []);
   
-  // str.charAt(0).toUpperCase() + str.slice(1)
   return (
     <div className="content">
       {
         (filterProp === 'trending') ? 
-        <div className="type">Trending {typeProp.charAt(0).toUpperCase() + typeProp.slice(1)} This Week </div>
+        <div className="type">Trending {typeProp.charAt(0).toUpperCase() + typeProp.slice(1)} Shows This Week </div>
         :
         <div className="type">
           {filter} {type}
@@ -83,6 +79,9 @@ const Content : React.FC<FilterTypes> = ({typeProp, filterProp}) => {
             return (
               <div className="card_wrapper">
                 <Card poster={data.poster_path}
+                type={typeProp}
+                filterType={filterProp}
+                id={data.id}
                 name={(data?.title) ? data.title : data.name} release_date={(data?.release_date) ? data.release_date : data.first_air_date}
                 popularity={data.popularity}/>
               </div>

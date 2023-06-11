@@ -1,0 +1,122 @@
+.detail{
+    width: 84%;
+    height: 400px;
+    /* height: 100%; */
+    margin-top: 70px !important;
+    margin-left: 250px !important;
+    /* margin: 0px auto; */
+}
+
+.header_wrapper{
+    position: relative;
+    width: 100%;
+    height: 100% !important;
+    /* z-index: 1; */
+    /* border: 2px solid red; */
+}
+
+.d_tagline{
+    letter-spacing: 4px;
+    font-size: 0.8rem;
+}
+
+.img_wrapper{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /* z-index: 1; */
+}
+
+.img_wrapper, .d_details{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.d_details{
+    text-align: left;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    /* z-index: 111; */
+    padding: 20px;
+    letter-spacing: 4px;
+    font-size: 0.8em;
+    line-height: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+
+.d_details h1{
+    font-size: 3em;
+}
+
+.genres{
+    display: flex;
+    column-gap: 10px;
+    margin-top: 10px;
+}
+
+.genres p{
+    background-color: rgba(86, 85, 85, 0.4);
+    border: 1px solid white;
+    width: fit-content;
+    text-align: center;
+    padding-left: 4px;
+    /* padding-right: 4px; */
+    line-height: 25px;
+    border-radius: 5px;
+
+}
+
+.img_wrapper img{
+    width: 100%;
+    height: 100%;
+}
+
+.other_d{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 10px;
+    margin: 10px auto;
+}
+
+.desc_d{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 10px;
+}
+
+.desc_d label, .s_desc_d label{
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    color: rgb(84, 83, 83);
+    line-height: 20px;
+    margin: 5px 0px;
+}
+
+.desc_d p{
+    margin: 5px 0px;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+}
+
+.detail_overview p{
+    height: 65px;
+    overflow-y: auto;
+}
+
+.s_desc_d{
+    padding: 30px;
+}
+
+.seasons{
+    /* border: 2px solid red; */
+    display: flex;
+    overflow-x: auto;
+    width: 100%;
+}
+

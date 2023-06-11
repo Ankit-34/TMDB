@@ -1,0 +1,24 @@
+.search{
+    width: 100%;
+    margin-top: 100px;
+    margin-left: 265px;
+}
+
+.paginition{
+    width: fit-content;
+    margin: 20px auto;
+}
+
+.ant-pagination-item a{
+    color: white !important;
+}
+
+.ant-pagination-item-active{
+    background-color: rgb(0, 0, 0) !important;
+    border: none !important;
+    outline: none !important;
+}
+
+.anticon-left, .anticon-right, .ant-pagination-item-ellipsis{
+    color: white !important;
+}

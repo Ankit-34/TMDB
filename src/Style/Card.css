@@ -13,6 +13,7 @@
     color: white !important;
     cursor: pointer;
     background-color: transparent !important;
+    /* max-width: 220px; */
 }
 
 .details{
@@ -21,7 +22,6 @@
     height: 130px;
     border-radius: 10px;
     padding: 10px;
-    /* display: none; */
 }
 
 .card_container img{
